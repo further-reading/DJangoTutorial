@@ -10,9 +10,9 @@
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
- {% load disqus_tags %}
- {% set_disqus_identifier "page_" page.pk %}
- {% set_disqus_title page.title %}
- {% disqus_show_comments %}
- {% disqus_dev %}
 {% endblock %}
+{% load disqus_tags %}
+{% set_disqus_identifier "page_" page.pk %}
+{% set_disqus_title page.title %}
+{% disqus_show_comments %}
+{% disqus_dev %}

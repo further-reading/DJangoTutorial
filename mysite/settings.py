@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.sites',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,8 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-    'discus',
+    'disqus',
 ]
+
+DISQUS_API_KEY = 'YrRdZRHcvvOCK7La8JdIIakvUBPOUmBptKk5P2R568zJYGPJHnxiBWMI0S0OiXCq'
+DISQUS_WEBSITE_SHORTNAME = 'furtherreading.pythonanywhere'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
